@@ -23,6 +23,10 @@ function populate(size) {
         div.classList.add('grid-item');
         const divDimension = (800 / size) - (4); 
         div.style.cssText = `min-width: ${divDimension}px; min-height: ${divDimension}px;` 
+
+        div.addEventListener("click", () => {
+            div.style.backgroundColor = "red";
+        })
         container.appendChild(div);
     }
 }
