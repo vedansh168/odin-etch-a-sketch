@@ -24,9 +24,11 @@ function populate(size) {
         const divDimension = (800 / size) - (4); 
         div.style.cssText = `min-width: ${divDimension}px; min-height: ${divDimension}px;` 
 
-        div.addEventListener("click", () => {
-            div.style.backgroundColor = "red";
+        div.addEventListener("mouseenter", () => {
+            div.classList.remove("grid-item");
+            div.classList.add("coloured-grid-item");
         })
+
         container.appendChild(div);
     }
 }

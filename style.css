@@ -23,3 +23,9 @@ button {
     width: 120px;
     height: 40px;
 }
+
+.coloured-grid-item {
+    background-color: red; 
+    border: 2px solid black;
+    flex: 0 0 1 ;
+}
